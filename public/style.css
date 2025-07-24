@@ -1,0 +1,269 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #EAF0D5; /* soft cream green */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #151514; /* olive brown */
+    text-align: center;
+}
+
+nav {
+    background-color: #5c715c; /* sage green */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+nav a {
+    color: #232309; /* dark olive */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+section {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: 'Georgia', serif;
+}
+
+ul li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+li strong {
+    display: block;
+    font-size: 1.1em;
+    color: #3C3B1F;
+    margin-bottom: 5px;
+}
+
+li span.description {
+    display: block;
+    font-size: 0.95em;
+    color: #555;
+    font-style: italic;
+}
+
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #8E7C61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #3C3B1F;
+}
+
+blockquote {
+    font-style: normal;
+    margin: 20px auto;
+    max-width: 700px;
+    background-color: #AEC8A4;
+    padding: 20px;
+    border-left: 5px solid #8E7C61;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+blockquote p {
+    font-family: inherit;
+    font-size: 1em;
+    color: inherit;
+}
+
+.stars {
+    color: #f5a623;
+    font-size: 1.3em;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.reviewer {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+img.menu-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+    display: block;
+}
+
+footer {
+    background-color: #3C3B1F;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+    border-top: 3px solid #8E7C61;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a.social-icon, .social-icon {
+    color: #AEC8A4;
+    margin: 0 15px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer a.social-icon:hover, .social-icon:hover {
+    color: #8E7C61;
+    transform: scale(1.3);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    section {
+        padding: 15px;
+    }
+}
+
+
+/* Add background image to body, anchored at bottom */
+body {
+    background-color: #EAF0D5;
+    background-image: linear-gradient(to top, rgba(234, 240, 213, 1), rgba(234, 240, 213, 0.7)), url('ethio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed; /* makes it stay as you scroll */
+  }
+  
+
+  nav {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+nav a {
+  position: relative;
+  color: #3C3B1F;
+  text-decoration: none;
+  margin: 0 12px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  color: #8E7C61;
+}
+
+/* Gold underline effect */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #C8B282; /* soft gold */
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Optional: space between emoji icon and text */
+nav a span {
+  margin-right: 5px;
+}
+
+.welcome-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffffcc; /* soft white overlay */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .welcome-section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+  
+  .welcome-section p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .menu-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8E7C61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .menu-button:hover {
+    background-color: #3C3B1F;
+    transform: scale(1.05);
+  }
+  
