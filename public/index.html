@@ -1,35 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Feru Bar and Restaurant</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div style="text-align: center; margin-bottom: 20px;">
-    <img src="/logo.webp" alt="Feru Bar and Restaurant Logo" style="max-width: 200px; height: auto;">
-  </div>
+  <!-- Header / Logo -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="/logo.webp" alt="Feru Bar and Restaurant Logo" class="logo-img" />
+    </div>
+    <nav>
+      <a href="/" class="active">Home</a>
+      <a href="/menu">Restaurant Menu</a>
+      <a href="/reservation">Reservation</a>
+      <a href="/testimonials">Testimonials</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
 
-  <nav>
-    <a href="/" class="active">Home</a> |
-    <a href="/menu">Restaurant Menu</a> |
-    <a href="/reservation">Reservation</a> |
-    <a href="/testimonials">Testimonials</a> |
-    <a href="/contact">Contact</a>
-  </nav>
-
-  <!-- 🌿 Welcome section -->
-  <section class="welcome-section">
-    <h1>Welcome to Feru Bar and Restaurant</h1>
-    <p>Step into a world of authentic Ethiopian flavors, where every dish is crafted with love and every guest is treated like family.</p>
-    <p>We invite you to explore our menu, enjoy our warm atmosphere, and create unforgettable memories with us.</p>
-    <a href="/menu" class="menu-button">Explore Our Menu</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Authentic Ethiopian cuisine, roasted coffee, and warm hospitality in Alexandria.</h1>
+      <p class="hero-sub">
+        Experience the flavors of Ethiopia — from rich stews to our traditional coffee ceremony.
+      </p>
+      <div class="hero-ctas">
+        <a href="/reservation" class="btn btn-primary">Reserve a Table</a>
+        <a href="/menu" class="btn btn-outline">See the Menu</a>
+      </div>
+    </div>
   </section>
 
+  <!-- PRESS / FEATURED IN -->
+  <section class="press reveal">
+    <h2>Featured In</h2>
+    <div class="press-logos">
+      <!-- Replace these with real logos/images if you have them -->
+      <span class="press-badge">Washingtonan</span>
+      <span class="press-badge">Eater DC</span>
+      <span class="press-badge">Northern Virginia Magazine</span>
+      <span class="press-badge">DCist</span>
+    </div>
+  </section>
+
+  <!-- QUICK FACTS -->
+  <section class="quick-facts reveal">
+    <div>📍 512 S Van Dorn St Unit D, Alexandria, VA 22304</div>
+    <div>🕒 Open Daily 11am–10pm</div>
+    <div>📞 703‑566‑0483</div>
+    <div>☕ Coffee Ceremony Available</div>
+  </section>
+
+  <!-- Smooth Scrolling Carousel (keep yours, just moved lower) -->
+  <section class="carousel-section reveal">
+    <div class="carousel smooth-carousel">
+      <div class="carousel-track">
+        <img src="feru2.jpg" alt="Ethiopian Dish 1" />
+        <img src="image.jpg" alt="Ethiopian Dish 2" />
+        <img src="image2.jpg" alt="Ethiopian Dish 3" />
+        <img src="image3.jpg" alt="Ethiopian Dish 4" />
+        <img src="image5.jpg" alt="Ethiopian Dish 5" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Chef's Specials -->
+  <section class="featured reveal">
+    <h2>Chef’s Specials</h2>
+    <div class="featured-grid">
+      <article class="menu-card">
+        <img src="Chicken_Tibs.png" alt="Chicken Tibs" />
+        <h3>Chicken Tibs</h3>
+        <p>Spiced chicken cubes with garlic, onions, and peppers.</p>
+        <span class="price">$17.99</span>
+      </article>
+      <article class="menu-card">
+        <img src="Doro_Wat.png" alt="Doro Wat" />
+        <h3>Doro Wot</h3>
+        <p>Spicy Ethiopian chicken stew with egg and rich sauce.</p>
+        <span class="price">$22.99</span>
+      </article>
+      <article class="menu-card">
+        <img src="Veggie_Combo.png" alt="Veggie Combo" />
+        <h3>Veggie Combo</h3>
+        <p>A colorful platter of our signature vegetarian dishes.</p>
+        <span class="price">$19.99</span>
+      </article>
+      <article class="menu-card">
+        <img src="Mushroom_Kitfo.png" alt="Mushroom Kitfo" />
+        <h3>Mushroom Kitfo</h3>
+        <p>Finely chopped mushrooms with Ethiopian spices.</p>
+        <span class="price">$19.99</span>
+      </article>
+    </div>
+    <div class="section-cta">
+      <a href="/menu" class="btn btn-primary">Browse Full Menu</a>
+    </div>
+  </section>
+
+  <!-- Welcome / About -->
+  <section class="welcome-section reveal">
+    <h2>Welcome to Feru Bar and Restaurant</h2>
+    <p>Discover the taste of authentic Ethiopian cuisine, prepared with passion and served with warm hospitality. Every dish tells a story of tradition and flavor, perfect for sharing with family and friends.</p>
+    <p>Whether you're here for a hearty meal, a refreshing drink, or a celebration, we promise a dining experience you'll never forget.</p>
+  </section>
+
+  <!-- Owners -->
+  <section class="owner-card reveal">
+    <div class="owner-photo-wrapper">
+      <img src="owner2.jpeg" alt="Owners - Melaku and Nibret" />
+    </div>
+    <div>
+      <h2>Meet Melaku and Nibret</h2>
+      <p>Melaku and Nibret brought Feru to life to share authentic Ethiopian flavors, coffee ceremony traditions, and heartfelt hospitality with Alexandria.</p>
+      <blockquote>“We cook like we’re serving family — because we are.”</blockquote>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Feru Bar and Restaurant. All rights reserved.</p>
+    <div>
+      <a href="#" class="social-icon">Facebook</a>
+      <a href="#" class="social-icon">Instagram</a>
+      <a href="#" class="social-icon">Twitter</a>
+    </div>
   </footer>
 
+  <script>
+    // Simple scroll reveal for .reveal sections
+    const onScrollReveal = () => {
+      document.querySelectorAll('.reveal').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('active');
+        }
+      });
+    };
+    window.addEventListener('scroll', onScrollReveal);
+    window.addEventListener('load', onScrollReveal);
+  </script>
 </body>
 </html>
