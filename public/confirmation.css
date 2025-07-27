@@ -1,0 +1,55 @@
+/* confirmation.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #faf4ef;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.confirmation-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff8f0;
+  border: 2px solid #b4442f;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.confirmation-container h1 {
+  color: #b4442f;
+  font-size: 2.2em;
+  margin-bottom: 15px;
+}
+
+.confirmation-container p {
+  font-size: 1.1em;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.confirmation-container .highlight {
+  font-weight: bold;
+  color: #b4442f;
+}
+
+.confirmation-container a.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 20px;
+  background-color: #b4442f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.confirmation-container a.button:hover {
+  background-color: #8c2f1d;
+}

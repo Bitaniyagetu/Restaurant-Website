@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Feru Bar and Restaurant - Full Menu</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-  <div style="text-align: center; margin-top: 20px;">
-    <img src="/logo.webp" alt="Feru Bar and Restaurant Logo" style="max-width: 180px; height: auto;">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="logo3.png" alt="Feru Bar and Restaurant Logo" class="logo-img">
+    </div>
   </div>
+  
+  
 
-  <h1>Feru Bar and Restaurant Complete Menu</h1>
-
+  <!-- Navigation -->
   <nav>
     <a href="/">Home</a> |
     <a href="/menu">Restaurant Menu</a> |
@@ -46,33 +50,16 @@
   <section>
     <h2>Meat Lovers</h2>
     <div class="menu-grid">
-      <div class="menu-card">
-        <h3>Meat Lovers Combo</h3>
-        <p>A feast of beef, lamb, chicken, and traditional sides.</p>
-        <span class="price">$59.99</span>
-      </div>
-      <div class="menu-card">
-        <h3>Chicken Tibs</h3>
-        <img src="Chicken_Tibs.png" alt="Chicken Tibs">
-        <p>Spiced chicken cubes with garlic, onions, and peppers.</p>
-        <span class="price">$17.99</span>
-      </div>
-      <div class="menu-card">
-        <h3>Doro Wot</h3>
-        <img src="Doro_Wat.png" alt="Doro Wot">
-        <p>Spicy Ethiopian chicken stew with egg and rich sauce.</p>
-        <span class="price">$22.99</span>
-      </div>
-      <div class="menu-card">
-        <h3>Lamb Tibs</h3>
-        <p>Tender lamb cubes sautéed with rosemary, jalapeño, and onions.</p>
-        <span class="price">$22.99</span>
-      </div>
-      <div class="menu-card">
-        <h3>Awaze Tibs</h3>
-        <p>Beef cubes sautéed in awaze sauce with jalapeños and onions.</p>
-        <span class="price">$20.99</span>
-      </div>
+      <div class="menu-card"><h3>Meat Lovers Combo</h3><p>A feast of beef, lamb, chicken, and traditional sides.</p><span class="price">$59.99</span></div>
+      <div class="menu-card"><h3>Chicken Tibs</h3><p>Spiced chicken cubes with garlic, onions, and peppers.</p><span class="price">$17.99</span></div>
+      <div class="menu-card"><h3>Lamb Tibs</h3><p>Tender lamb cubes sautéed with rosemary, jalapeño, and onions.</p><span class="price">$22.99</span></div>
+      <div class="menu-card"><h3>Bozena Shiro</h3><p>Shiro stew with chunks of tender beef and authentic spices.</p><span class="price">$18.99</span></div>
+      <div class="menu-card"><h3>Gomen Be Sega</h3><p>Collard greens with beef cubes and Ethiopian seasoning.</p><span class="price">$16.99</span></div>
+      <div class="menu-card"><h3>Fish Cutlet</h3><p>Fried fish fillet seasoned with herbs and spices.</p><span class="price">$17.99</span></div>
+      <div class="menu-card"><h3>Special Kitfo</h3><p>Minced beef mixed with Ethiopian butter and mitmita.</p><span class="price">$23.99</span></div>
+      <div class="menu-card"><h3>Derek Tibs</h3><p>Grilled beef cubes with a mix of spices and garlic.</p><span class="price">$22.99</span></div>
+      <div class="menu-card"><h3>Awaze Tibs</h3><p>Beef cubes sautéed in awaze sauce with jalapeños and onions.</p><span class="price">$20.99</span></div>
+      <div class="menu-card"><h3>Doro Wot</h3><p>Spicy Ethiopian chicken stew with egg and rich sauce.</p><span class="price">$22.99</span></div>
     </div>
   </section>
 
@@ -80,68 +67,38 @@
   <section>
     <h2>Veggie Lovers</h2>
     <div class="menu-grid">
-      <div class="menu-card">
-        <h3>Veggie Combo</h3>
-        <img src="Veggie_Combo.png" alt="Veggie Combo">
-        <p>Lentils, peas, collard greens, cabbage, carrots, beets, salad.</p>
-        <span class="price">$19.99</span>
-      </div>
-      <div class="menu-card">
-        <h3>Mushroom Kitfo</h3>
-        <img src="Mushroom_Kitfo.png" alt="Mushroom Kitfo">
-        <p>Minced mushroom dish with Ethiopian spices and butter.</p>
-        <span class="price">$19.99</span>
-      </div>
-      <div class="menu-card">
-        <h3>Shiro (Special)</h3>
-        <p>Rich chickpea stew with house seasonings.</p>
-        <span class="price">$17.99</span>
-      </div>
+      <div class="menu-card"><h3>Veggie Combo</h3><p>Red lentils, peas, collard greens, cabbage, carrots, beets, and salad.</p><span class="price">$19.99</span></div>
+      <div class="menu-card"><h3>Shiro (Special)</h3><p>Rich chickpea stew with house seasoning.</p><span class="price">$17.99</span></div>
+      <div class="menu-card"><h3>Mushroom Kitfo</h3><p>Minced mushroom dish with Ethiopian spices and butter.</p><span class="price">$19.99</span></div>
+      <div class="menu-card"><h3>Asa Tibs (Tilapia)</h3><p>Fish cubes sautéed with mixed herbs and spices.</p><span class="price">$20.99</span></div>
+      <div class="menu-card"><h3>Asa Dullet Kitfo</h3><p>Seasoned fish kitfo with onions and peppers.</p><span class="price">$20.99</span></div>
+      <div class="menu-card"><h3>Avocado Salad</h3><p>Fresh avocado slices with garden vegetables.</p><span class="price">—</span></div>
     </div>
   </section>
 
   <!-- SPAGHETTI & SANDWICHES -->
   <section>
-    <h2>Sandwiches & Spaghetti</h2>
+    <h2>Spaghetti & Sandwiches</h2>
     <div class="menu-grid">
-      <div class="menu-card">
-        <h3>Pasta with Meat Sauce</h3>
-        <img src="Pasta_with_meat_sauce.png" alt="Pasta with Meat Sauce">
-        <p>Pasta topped with savory meat sauce.</p>
-        <span class="price">$15.99</span>
-      </div>
-      <div class="menu-card">
-        <h3>Spaghetti with Tomato</h3>
-        <p>Pasta with slow-cooked tomato sauce.</p>
-        <span class="price">$19.99</span>
-      </div>
-      <div class="menu-card">
-        <h3>Avocado Sandwich</h3>
-        <p>Avocado, grilled onions, lettuce, tomato, vegan pesto.</p>
-        <span class="price">$10.99</span>
-      </div>
+      <div class="menu-card"><h3>Spaghetti w/ Tomato</h3><p>Pasta with slow-cooked tomato sauce.</p><span class="price">$19.99</span></div>
+      <div class="menu-card"><h3>Spaghetti w/ Meat Sauce</h3><p>Pasta topped with savory meat sauce.</p><span class="price">$15.99</span></div>
+      <div class="menu-card"><h3>Avocado Sandwich</h3><p>Avocado, grilled onions, lettuce, tomato, vegan pesto.</p><span class="price">$10.99</span></div>
+      <div class="menu-card"><h3>Kitfo Sandwich</h3><p>Minced beef kitfo with Ethiopian spices, served on warm bread.</p><span class="price">$12.99</span></div>
+      <div class="menu-card"><h3>Gored Gored</h3><p>Cubed raw beef seasoned with Ethiopian spices.</p><span class="price">$20.99</span></div>
     </div>
   </section>
 
-  <!-- DESSERTS -->
+  <!-- DESSERTS & KIDS MENU -->
   <section>
     <h2>Desserts & Kids Menu</h2>
     <div class="menu-grid">
-      <div class="menu-card">
-        <h3>Homemade Baklava</h3>
-        <p>Flaky pastry with nuts, honey, and spice.</p>
-        <span class="price">$4.99</span>
-      </div>
-      <div class="menu-card">
-        <h3>Mac & Cheese (Kids)</h3>
-        <p>Classic creamy macaroni and cheese.</p>
-        <span class="price">$8.99</span>
-      </div>
-      <div class="menu-card">
-        <h3>Chicken Nugget (Kids)</h3>
-        <p>Crispy chicken bites served with sauce.</p>
-        <span class="price">$7.99</span>
-      </div>
+      <div class="menu-card"><h3>Home Made Baklava</h3><span class="price">$4.99</span></div>
+      <div class="menu-card"><h3>Tiramisu</h3><span class="price">$5.99</span></div>
+      <div class="menu-card"><h3>Baklava</h3><span class="price">$4.99</span></div>
+      <div class="menu-card"><h3>Mini Cream Puff</h3><span class="price">$5.99</span></div>
+      <div class="menu-card"><h3>Chicken Nugget</h3><span class="price">$7.99</span></div>
+      <div class="menu-card"><h3>Mac & Cheese</h3><span class="price">$8.99</span></div>
+      <div class="menu-card"><h3>Spaghetti/Pasta</h3><span class="price">$7.99</span></div>
     </div>
   </section>
 
@@ -149,29 +106,50 @@
   <section>
     <h2>Hot Drinks & Beverages</h2>
     <div class="menu-grid">
-      <div class="menu-card">
-        <h3>Ethiopian Hot Tea</h3>
-        <p>Traditional Ethiopian spiced tea.</p>
-        <span class="price">$3.25</span>
-      </div>
-      <div class="menu-card">
-        <h3>Latte</h3>
-        <p>Espresso with steamed milk.</p>
-        <span class="price">$3.25</span>
-      </div>
-      <div class="menu-card">
-        <h3>Cappuccino</h3>
-        <p>Espresso, steamed milk, foam, and cocoa dusting.</p>
-        <span class="price">$4.25</span>
-      </div>
+      <div class="menu-card"><h3>Ethiopian Hot Tea</h3><span class="price">$3.25</span></div>
+      <div class="menu-card"><h3>Ginger Tea</h3><span class="price">$3.50</span></div>
+      <div class="menu-card"><h3>Espresso</h3><span class="price">$3.25</span></div>
+      <div class="menu-card"><h3>Latte</h3><span class="price">$3.25</span></div>
+      <div class="menu-card"><h3>Macchiato</h3><span class="price">$3.25</span></div>
+      <div class="menu-card"><h3>Cappuccino</h3><span class="price">$4.25</span></div>
+      <div class="menu-card"><h3>Coffee</h3><span class="price">$2.00</span></div>
+      <div class="menu-card"><h3>Jebena Buna Full</h3><span class="price">$5.00</span></div>
+      <div class="menu-card"><h3>Jebena Buna Cup</h3><span class="price">$4.99</span></div>
+      <div class="menu-card"><h3>Soda</h3><span class="price">$2.99</span></div>
+      <div class="menu-card"><h3>Juice</h3><span class="price">$3.25</span></div>
+      <div class="menu-card"><h3>Lemonade</h3><span class="price">$3.25</span></div>
+      <div class="menu-card"><h3>Perrier</h3><span class="price">$3.50</span></div>
+      <div class="menu-card"><h3>Bottled Water</h3><span class="price">$3.25</span></div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- COCKTAILS, BEER & WINE -->
+  <section>
+    <h2>Cocktails, Beer & Wine</h2>
+    <div class="menu-grid">
+      <div class="menu-card"><h3>Feru Sunrise</h3><span class="price">$13.00</span></div>
+      <div class="menu-card"><h3>Mojito</h3><span class="price">$13.00</span></div>
+      <div class="menu-card"><h3>Old Fashioned</h3><span class="price">$13.00</span></div>
+      <div class="menu-card"><h3>Orange Blossom</h3><span class="price">$13.00</span></div>
+      <div class="menu-card"><h3>House Margarita</h3><span class="price">$13.00</span></div>
+      <div class="menu-card"><h3>Dark and Stormy</h3><span class="price">$13.00</span></div>
+      <div class="menu-card"><h3>Stella</h3><span class="price">$4.50</span></div>
+      <div class="menu-card"><h3>Coronas</h3><span class="price">$4.50</span></div>
+      <div class="menu-card"><h3>Guinness</h3><span class="price">$5.00</span></div>
+      <div class="menu-card"><h3>IPA</h3><span class="price">$6.00</span></div>
+      <div class="menu-card"><h3>Bud Light</h3><span class="price">$4.00</span></div>
+      <div class="menu-card"><h3>Heineken</h3><span class="price">$4.50</span></div>
+      <div class="menu-card"><h3>Miller Lite</h3><span class="price">$4.00</span></div>
+      <div class="menu-card"><h3>Ethiopian Habesha Beer / Melotti</h3><span class="price">$6.00</span></div>
+      <div class="menu-card"><h3>White Wine (Pinot Grigio, Star Borough Sauv., etc.)</h3><span class="price">$12.00-$48.00</span></div>
+      <div class="menu-card"><h3>Red Wine (Juggernaut Cab, Merlot, etc.)</h3><span class="price">$12.00-$48.00</span></div>
+      <div class="menu-card"><h3>House Wine - Pinot Grigio</h3><span class="price">$12.00</span></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Feru Bar and Restaurant. All rights reserved.</p>
   </footer>
-
-  
 </body>
 </html>

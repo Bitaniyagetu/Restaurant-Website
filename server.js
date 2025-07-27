@@ -127,19 +127,34 @@ app.post('/reservation', (req, res) => {
 
   // Show confirmation page
   res.send(`
-  <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 30px; background-color: #fff8f0; border: 2px solid #b4442f; border-radius: 12px; text-align: center;">
-    <h1 style="color: #b4442f;">🍷 Thank you, ${name}!</h1>
-    <p style="font-size: 1.1em; color: #333;">
-      Your reservation for <strong>${guests}</strong> guest(s) on <strong>${date}</strong> at <strong>${time}</strong> has been received.
-    </p>
-    <p style="margin-top: 15px; color: #555;">
-      We’ve sent a confirmation email to: <strong>${email}</strong>
-    </p>
-    <a href="/" style="display: inline-block; margin-top: 25px; padding: 10px 20px; background-color: #b4442f; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;">
-      ⬅️ Back to Home
-    </a>
-  </div>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Confirmation</title>
+    <link rel="stylesheet" href="/confirmation.css">
+  </head>
+  <body>
+
+  
+    <div class="confirmation-container">
+      <h1>🍷 Thank you, ${name}!</h1>
+      <p>
+        Your reservation for <span class="highlight">${guests}</span> guest(s) 
+        on <span class="highlight">${date}</span> at <span class="highlight">${time}</span> 
+        has been received.
+      </p>
+      <p>
+        We’ve sent a confirmation email to: <strong>${email}</strong>
+      </p>
+      <a href="/" class="button">⬅️ Back to Home</a>
+    </div>
+  </body>
+  </html>
 `);
+
+
 
 });
 

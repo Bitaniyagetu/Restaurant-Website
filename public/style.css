@@ -15,14 +15,14 @@ body {
 
 /* Headings */
 h1, h2 {
-    color: #e6e6eb; /* rich red */
+    color: #000000; /* rich red */
     text-align: center;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #FFD700; /* gold */
-    padding: 10px;
+    background-color:#E6C200; /* gold */
+    padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     text-align: center;
@@ -546,7 +546,7 @@ section {
   .hero {
     position: relative;
     min-height: 65vh;
-    background: url('image2.jpg') center/cover no-repeat; /* change to your hero image */
+    background: url('background.png') center/cover no-repeat; /* change to your hero image */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -729,5 +729,148 @@ section {
   .reveal.active{
     opacity: 1;
     transform: translateY(0);
+  }
+  
+
+
+
+
+  /* ===================================
+     Magazines
+  =================================== */
+
+
+  .featured-in {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .featured-in h2 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    color: #1C1C1C;
+    font-family: 'Playfair Display', serif;
+  }
+  
+
+
+
+
+
+
+
+
+  
+
+.featured-section {
+    background: #f8f3e7;
+    padding: 20px 0; /* Reduced padding */
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .featured-title {
+    color: #333;
+    font-size: 1.5rem; /* Smaller title */
+    margin-bottom: 15px; /* Less margin below title */
+  }
+
+  .featured-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Smaller gap */
+    flex-wrap: wrap;
+  }
+
+  .featured-logo {
+    width: 150px; /* Smaller logos */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+  }
+
+  .featured-logo:hover {
+    transform: scale(1.08) translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2),
+                0 0 6px rgba(255, 200, 100, 0.3);
+    border-radius: 6px;
+  }
+
+
+
+
+
+
+  /* === Reservation Page === */
+
+/* Logo Centering */
+.header, .header img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Page Title */
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Reservation Form */
+  form {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  
+  form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    font-family: inherit;
+  }
+  
+  form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #111;
+    transform: scale(1.05);
+  }
+  
+  /* Back to Home Link */
+  a.back-home {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a.back-home:hover {
+    color: #8B1A1A;
+    text-decoration: underline;
   }
   

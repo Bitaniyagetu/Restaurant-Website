@@ -1,0 +1,221 @@
+/* === General Layout === */
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #f1e1bc; /* soft cream */
+    color: #1C1C1C;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+/* === Headings === */
+h1, h2, h3 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1C1C1C;
+}
+section h2 {
+    text-align: center;        /* Center the text */
+    color: #333;               /* Neutral color */
+    font-size: 2rem;           /* Slightly larger title */
+    margin-bottom: 20px;       /* Space below */
+    font-family: 'Georgia', 'Times New Roman', serif; /* Same font family */
+    font-weight: 700;
+    background: none;          /* Remove yellow background */
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* Optional underline effect */
+section h2::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: #FFD700;  /* Gold underline */
+    left: 25%;
+    bottom: 0;
+    border-radius: 1px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* === Navigation Bar === */
+nav {
+    background-color:#E6C200; /* gold */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #1C1C1C;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    color: #333333;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #1C1C1C;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* === Sections === */
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+section:nth-of-type(even) {
+    background-color: #fdf6e3; /* soft cream */
+}
+
+section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #FFD700;
+    display: inline-block;
+}
+
+/* === Menu Grid === */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.menu-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+    border: 1px solid #f1e1bc;
+    position: relative;
+}
+
+.menu-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, #FFD700, #f5e7b5);
+    border-radius: 10px 10px 0 0;
+}
+
+.menu-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.menu-card h3 {
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #FFD700; /* Gold divider under title */
+}
+
+.menu-card p {
+    font-size: 0.95em;
+    color: #444;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.menu-card .price {
+    text-align: right;
+    font-weight: bold;
+    color: #1C1C1C;
+    font-size: 1.1em;
+    border-top: 1px solid #FFD700; /* Gold divider above price */
+    padding-top: 6px;
+}
+
+/* === Fade-in Animation === */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.menu-card:nth-child(1) { animation-delay: 0.1s; }
+.menu-card:nth-child(2) { animation-delay: 0.2s; }
+.menu-card:nth-child(3) { animation-delay: 0.3s; }
+.menu-card:nth-child(4) { animation-delay: 0.4s; }
+.menu-card:nth-child(5) { animation-delay: 0.5s; }
+
+/* === Footer === */
+footer {
+    background-color: #1C1C1C;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+    border-top: 3px solid #FFD700;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Logo Styling */
+.logo-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo-img {
+    max-width: 180px; /* Adjust this size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
