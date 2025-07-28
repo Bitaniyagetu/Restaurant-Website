@@ -1,55 +1,56 @@
-/* confirmation.css */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 body {
-  font-family: 'Playfair Display', serif;
-  background-color: #faf4ef;
-  color: #333;
+  font-family: 'Playfair+Display', serif;
+  background-color: #F9E5AC;
+  color: #1C1C1C;
   margin: 0;
-  padding: 0;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .confirmation-container {
-  max-width: 600px;
-  margin: 60px auto;
-  padding: 30px;
-  background-color: #fff8f0;
-  border: 2px solid #b4442f;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
+  background: #fff8f0;
+  padding: 40px;
+  margin: auto;
+  border: 2px solid #a66e2c; /* updated */
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
 .confirmation-container h1 {
-  color: #b4442f;
-  font-size: 2.2em;
-  margin-bottom: 15px;
+  color: #a66e2c; /* updated */
+  font-size: 2.4em;
+  margin-bottom: 20px;
 }
 
 .confirmation-container p {
-  font-size: 1.1em;
-  color: #444;
-  line-height: 1.5;
+  font-size: 1.2em;
   margin-bottom: 15px;
 }
 
-.confirmation-container .highlight {
+.highlight {
+  color: #a66e2c; /* updated */
   font-weight: bold;
-  color: #b4442f;
 }
 
-.confirmation-container a.button {
+.button {
   display: inline-block;
-  margin-top: 25px;
-  padding: 10px 20px;
-  background-color: #b4442f;
+  background-color: #a66e2c; /* updated */
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  padding: 12px 24px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  margin-top: 25px;
 }
 
-.confirmation-container a.button:hover {
-  background-color: #8c2f1d;
+.button:hover {
+  background-color: #8b5821; /* updated */
+}
+
+.logo {
+  max-width: 120px;
+  margin-bottom: 25px;
 }

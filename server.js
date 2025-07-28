@@ -87,36 +87,40 @@ app.post('/reservation', (req, res) => {
   console.log('✅ Reservation saved to file');
 
   // Fancy HTML email
+  // ... everything else remains unchanged
+
   const mailOptions = {
     from: 'Feru Restaurant and Bar <ferurestaurantandbar@gmail.com>',
-    to: email, // customer's email
-    bcc: 'ferurestaurantandbar@gmail.com', // restaurant will also receive a copy
+    to: email,
+    bcc: 'ferurestaurantandbar@gmail.com',
     subject: '✨ Your Reservation at Feru Bar and Restaurant ✨',  
     html: `
-      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-        <h2 style="text-align: center; color: #b4442f;">🍷 Feru Bar and Restaurant 🍽️</h2>
-        <p>Hi <strong>${name}</strong>,</p>
-        <p>Thank you for your reservation! Here are the details:</p>
-        <table style="width: 100%; border-collapse: collapse;">
-          <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Date</strong></td>
-            <td style="padding: 8px; border: 1px solid #ddd;">${date}</td>
-          </tr>
-          <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Time</strong></td>
-            <td style="padding: 8px; border: 1px solid #ddd;">${time}</td>
-          </tr>
-          <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Guests</strong></td>
-            <td style="padding: 8px; border: 1px solid #ddd;">${guests}</td>
-          </tr>
-        </table>
-        <p>We can't wait to serve you! If you need to make changes, just reply to this email or contact us at <a href="mailto:ferurestaurantandbar@gmail.com">ferurestaurantandbar@gmail.com</a>.</p>
-        <hr style="margin: 20px 0;">
-        <p style="font-size: 0.9em; color: #555; text-align: center;">Feru Bar and Restaurant, 123 Main Street, YourCity, USA</p>
-      </div>
-    `
+  <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; background-color: #F9E5AC; border: 2px solid #b4442f; border-radius: 8px;">
+    <h2 style="text-align: center; color: #b4442f;">🍷 Feru Bar and Restaurant 🍽️</h2>
+    <p>Hi <strong>${name}</strong>,</p>
+    <p>Thank you for your reservation! Here are the details:</p>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
+      <tr>
+        <td style="padding: 8px; border: 1px solid #b4442f; background-color: #fff;"><strong>Date</strong></td>
+        <td style="padding: 8px; border: 1px solid #b4442f; background-color: #fff;">${date}</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #b4442f; background-color: #fff;"><strong>Time</strong></td>
+        <td style="padding: 8px; border: 1px solid #b4442f; background-color: #fff;">${time}</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #b4442f; background-color: #fff;"><strong>Guests</strong></td>
+        <td style="padding: 8px; border: 1px solid #b4442f; background-color: #fff;">${guests}</td>
+      </tr>
+    </table>
+    <p style="margin-top: 10px;">We can't wait to serve you! If you need to make changes, just reply to this email or contact us at 
+    <a href="mailto:ferurestaurantandbar@gmail.com">ferurestaurantandbar@gmail.com</a>.</p>
+    <hr style="margin: 20px 0; border: none; border-top: 1px solid #b4442f;">
+    <p style="font-size: 0.9em; color: #555; text-align: center;">Feru Bar and Restaurant, 123 Main Street, YourCity, USA</p>
+  </div>
+`
   };
+
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
