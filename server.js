@@ -15,8 +15,8 @@ app.use(express.urlencoded({ extended: true }));
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'bituzelalem@gmail.com',
-    pass: 'wzhe zgnl afhv yzvn' // <-- app-specific password
+    user: 'ferurestaurantandbar',
+    pass: 'wwbn fjmg kows ysjq' // <-- app-specific password
   }
 });
 
@@ -88,9 +88,10 @@ app.post('/reservation', (req, res) => {
 
   // Fancy HTML email
   const mailOptions = {
-    from: 'bituzelalem@gmail.com',
-    to: email,
-    subject: '✨ Your Reservation at Feru Bar and Restaurant ✨',
+    from: 'Feru Restaurant and Bar <ferurestaurantandbar@gmail.com>',
+    to: email, // customer's email
+    bcc: 'ferurestaurantandbar@gmail.com', // restaurant will also receive a copy
+    subject: '✨ Your Reservation at Feru Bar and Restaurant ✨',  
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
         <h2 style="text-align: center; color: #b4442f;">🍷 Feru Bar and Restaurant 🍽️</h2>
@@ -110,7 +111,7 @@ app.post('/reservation', (req, res) => {
             <td style="padding: 8px; border: 1px solid #ddd;">${guests}</td>
           </tr>
         </table>
-        <p style="margin-top: 15px;">We can't wait to serve you! If you need to make changes, just reply to this email or contact us at <a href="mailto:bituzelalem@gmail.com">bituzelalem@gmail.com</a>.</p>
+        <p>We can't wait to serve you! If you need to make changes, just reply to this email or contact us at <a href="mailto:ferurestaurantandbar@gmail.com">ferurestaurantandbar@gmail.com</a>.</p>
         <hr style="margin: 20px 0;">
         <p style="font-size: 0.9em; color: #555; text-align: center;">Feru Bar and Restaurant, 123 Main Street, YourCity, USA</p>
       </div>
