@@ -950,3 +950,51 @@ a.back-home:hover {
       grid-template-columns: 1fr;
   }
 }
+.featured-press {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.featured-press h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.press-items {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.press-item {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.press-item:hover {
+  transform: scale(1.05);
+}
+
+.press-item img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.caption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.centered-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
